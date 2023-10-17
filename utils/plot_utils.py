@@ -87,7 +87,7 @@ def plot_confusion_matrix(y_true, y_pred, disp_acc=True):
     ax.set_ylabel('True label', fontdict=font1)
 
     root = r'E:\code'
-    file = r'CITN\photos' + r'\14' + r'.jpg'
+    file = r'TRN-EWM\photos' + r'\14' + r'.jpg'
     path = os.path.join(root, file)
     path = check_creat_new(path)
     if not os.path.exists(path):
@@ -177,10 +177,10 @@ def tSNE_fun(input_data, shot, name=None, labels=None, n_dim=2):
 
 def plot_tsne( x_s, x_t ):
     root = r'E:\code'
-    file = r'CITN\photos' + r'\14' + r'.jpg'
+    file = r'TRN-EWM\photos' + r'\14' + r'.jpg'
     path = os.path.join(root, file)
     save_fig_path = path
-    print('CITN labels used for t-sne!')
+    print('TRN-EWM labels used for t-sne!')
     labels = ['NC', 'IF', 'OF']
     classes=3
     shot = int(np.ceil(x_s.shape[0] / classes))
@@ -254,7 +254,7 @@ def t_sne(input_data, classes, input_label=None, name=None, labels=None, n_dim=2
 
     if shot == 200:
         root = r'E:\code'
-        file = r'CITN' + r'\photos\imgs\CITN_meta.jpg'
+        file = r'TRN-EWM' + r'\photos\imgs\CITN_meta.jpg'
         path = os.path.join(root, file)
         path = check_creat_new(path)
         plt.savefig(path, dpi=600)

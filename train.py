@@ -13,7 +13,7 @@ import copy
 
 import configs
 import argparse
-from model.CITN import BaseTrain,VNet
+from model.TRN_EWM import BaseTrain,VNet
 from utils.io_utils import model_dict, parse_args, get_resume_file, get_assigned_file,get_best_file
 from utils.base_utils import adjust_learning_rate,accuracy
 from dataset import EB_dataset,PU_dataset,Dataloader

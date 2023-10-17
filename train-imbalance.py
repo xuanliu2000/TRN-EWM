@@ -13,7 +13,7 @@ import copy
 import matplotlib.pyplot as plt
 import configs
 import argparse
-from model.CITN import BaseTrain,VNet,Classifier
+from model.TRN_EWM import BaseTrain,VNet,Classifier
 from utils.io_utils import model_dict, parse_args, get_resume_file, get_assigned_file,get_best_file
 from utils.base_utils import adjust_learning_rate,accuracy
 from dataset import EB_dataset,PU_dataset,Dataloader,EB_dataset_imbalance,PU_dataset_imbalance
